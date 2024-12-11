@@ -19,7 +19,7 @@ const Lists = () => {
     },
   ];
   return (
-    <View>
+    <View style={{boxShadow: '0 0 20px 5px rgba(0,0,0, .2)'}} className="bg-slate-500 flex flex-col items-center py-10 rounded-lg mb-40">
       {data.map((item) => (
         <Text
           key={item.id}
