@@ -3,6 +3,7 @@ import Lists from "../components/Lists";
 import "../../global.css";
 import Profile from "../components/Profile";
 import Car from "../components/Car";
+import FlatListRender from "../components/FlatList";
 
 const app = () => {
   return (
@@ -13,6 +14,7 @@ const app = () => {
       <Profile />
       <Lists />
       <Car />
+      <FlatListRender />
       <View className='mb-40'>
         <Text className="bg-black text-white text-center font-bold text-lg py-5">Footer</Text>
       </View>
