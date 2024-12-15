@@ -7,6 +7,8 @@ import FlatListRender from "../components/FlatList";
 import Product from "../components/ChildComponent";
 import { useState } from "react";
 import WithoutState from "../counter/WithoutState";
+import { AddArrayElement, DeleteArrayElement, UpdateArrayElement } from "../array/ArrayExamples";
+import { UpdateObjectElement } from "../objects/ObjectExamples";
 
 const app = () => {
   const [data, setData] = useState([
@@ -52,10 +54,16 @@ const app = () => {
         )}
       />
 
+      <DeleteArrayElement />
+
       <WithoutState />
 
+      <AddArrayElement />
+
       <Lists />
+      <UpdateArrayElement />
       <Car />
+      <UpdateObjectElement />
       <FlatListRender />
       <View className="mb-40">
         <Text className="bg-black text-white text-center font-bold text-lg py-5">
