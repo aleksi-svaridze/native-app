@@ -7,8 +7,15 @@ import FlatListRender from "../components/FlatList";
 import Product from "../components/ChildComponent";
 import { useState } from "react";
 import WithoutState from "../counter/WithoutState";
-import { AddArrayElement, DeleteArrayElement, UpdateArrayElement } from "../array/ArrayExamples";
+import {
+  AddArrayElement,
+  DeleteArrayElement,
+  UpdateArrayElement,
+} from "../array/ArrayExamples";
 import { UpdateObjectElement } from "../objects/ObjectExamples";
+import ToggleState from "../tasks/ToggleState";
+import WeatherApp from "../tasks/WeatherApp";
+import ColorPicker from "../tasks/ColorPicker";
 
 const app = () => {
   const [data, setData] = useState([
@@ -36,9 +43,9 @@ const app = () => {
   ]);
   return (
     <ScrollView className="flex-1 px-3 pt-20">
-      <Text className="mb-3 bg-white p-3 rounded-lg text-red-500">
-        Hello 2 + 20 = {2 + 20}
-      </Text>
+      <ColorPicker />
+      <WeatherApp />
+      <ToggleState />
       <Profile />
       <FlatList
         data={data}
