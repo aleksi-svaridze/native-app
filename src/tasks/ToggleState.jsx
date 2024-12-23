@@ -2,7 +2,7 @@ import { useState } from "react";
 import { View, Text, Button } from "react-native";
 
 const ToggleState = () => {
-  const [toggle, setToggle] = useState<boolean>(false);
+  const [toggle, setToggle] = useState(false);
   const handleToggleState = () => {
     setToggle(!toggle);
   };
