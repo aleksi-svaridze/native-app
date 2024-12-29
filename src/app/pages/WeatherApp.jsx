@@ -21,6 +21,8 @@ const WeatherApp = () => {
         <Link href='/' className="py-2 px-3 bg-red-500 text-white">Main page</Link>
         <Link href='/pages/Counter' className="py-2 px-3 bg-red-500 text-white">Counter</Link>
         <Link href='/pages/ColorPicker' className="py-2 px-3 bg-red-500 text-white">Color picker</Link>
+        <Link href='/pages/ReducerCounter' className="py-2 px-3 bg-red-500 text-white">RedCounter</Link>
+        <Link href='/pages/Todos' className="py-2 px-3 bg-red-500 text-white">Todos</Link>
       </View>
       <View className="my-5 py-5">
         <TextInput
